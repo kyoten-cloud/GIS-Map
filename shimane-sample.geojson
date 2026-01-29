@@ -1,0 +1,143 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    // 点 (Point) ×3
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [133.050, 35.472]
+      },
+      "properties": {
+        "name": "松江城",
+        "type": "城",
+        "note": "日本三大湖城の一つ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [132.873, 35.428]
+      },
+      "properties": {
+        "name": "出雲大社",
+        "type": "神社",
+        "note": "縁結びの神様"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [133.766, 34.896]
+      },
+      "properties": {
+        "name": "石見銀山（大森）",
+        "type": "世界遺産",
+        "note": "鉱山遺跡"
+      }
+    },
+
+    // 線 (LineString) ×3
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [133.050, 35.472],   // 松江城
+          [132.873, 35.428],   // 出雲大社
+          [132.758, 35.368]    // 日御碕方面
+        ]
+      },
+      "properties": {
+        "name": "松江〜出雲〜日御碕観光ルート",
+        "type": "観光ドライブ",
+        "approx_distance_km": 65
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [133.766, 34.896],   // 石見銀山
+          [132.435, 34.890],   // 益田市街
+          [132.100, 34.700]    // 浜田方面
+        ]
+      },
+      "properties": {
+        "name": "石見地方横断ルート",
+        "type": "地域移動経路"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [133.050, 35.472],   // 松江
+          [133.050, 35.200],   // 安来方面
+          [133.200, 35.050]    // 米子・境港方面
+        ]
+      },
+      "properties": {
+        "name": "松江〜境港方面ルート",
+        "type": "移動経路"
+      }
+    },
+
+    // 面 (Polygon) ×3　← 簡易的な四角形で作成
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [133.00, 35.50],
+          [133.10, 35.50],
+          [133.10, 35.45],
+          [133.00, 35.45],
+          [133.00, 35.50]
+        ]]
+      },
+      "properties": {
+        "name": "松江市中心部エリア",
+        "type": "都市部範囲"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [132.80, 35.45],
+          [132.95, 35.45],
+          [132.95, 35.35],
+          [132.80, 35.35],
+          [132.80, 35.45]
+        ]]
+      },
+      "properties": {
+        "name": "出雲市南部エリア",
+        "type": "範囲エリア"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [133.70, 35.00],
+          [133.85, 35.00],
+          [133.85, 34.80],
+          [133.70, 34.80],
+          [133.70, 35.00]
+        ]]
+      },
+      "properties": {
+        "name": "大田市・石見銀山周辺",
+        "type": "鉱山遺跡エリア"
+      }
+    }
+  ]
+}
